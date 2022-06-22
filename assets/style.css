@@ -10,9 +10,10 @@ body {
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ce6bb0;
     color: #ffffff;
+
 }
 
 header h1 {
@@ -28,8 +29,12 @@ nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
+}
+
+nav a{
+    text-decoration: underline;
 }
 
 nav ul {
@@ -38,27 +43,23 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    /* display:flex;
-    flex-direction: row; */
     margin-left: 25px;
+   
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+
 }
 
-p {
-    font-size: 16px;
-}
 
-.hero {
+#laptop {
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: img src="C:\Users\ksmgp\Documents\UCF\Challenges\challenge2\Professional-Portfolio\assets\laptop.jpg">
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 /* above image is NOT working */
@@ -68,8 +69,6 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
-
 
 
 .about-me, .work , .contact-me {
@@ -84,10 +83,26 @@ p {
     color: #ffffff;
 }
 
+
+/* added pseudo class hover */
+.work:hover, .about-me:hover, .contact-me:hover {
+    box-shadow:0px 0px 8px
+    #8d4979
+}
+
+
 .content p {
     font-size: medium;
 }
 
+#headshot{
+    height:70px;
+    width:70px;
+    border-radius: 35px;
+    /* display:flex;
+    justify-content:right ; */
+}
+/* added headshot */
 
 #linkedin {
  text-decoration:underline;   
