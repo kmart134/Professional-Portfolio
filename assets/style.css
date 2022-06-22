@@ -10,19 +10,14 @@ body {
 
 header {
     padding: 20px;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ce6bb0;
-    color: #ffffff;
-
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-header h1 .seo {
-    color: #d9dcd6;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
 }
 
 nav {
@@ -64,7 +59,7 @@ a {
 .content {
     width: 100%;
     display: inline-block;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 
@@ -88,8 +83,12 @@ a {
 }
 
 
-.content p {
-    font-size: medium;
+.body-text{
+font-size: large;
+}
+
+.contact-me li{
+font-size: large;
 }
 
 /* added headshot */
@@ -97,7 +96,14 @@ a {
     height:100px;
     width:125px;
     border-radius: 30px;
+    border: 3px solid pink;
     float:right;
+}
+
+#headshot:hover{
+    height:125px;
+    width:145px;
+    transition: ease 50ms;
 }
 
 
@@ -112,7 +118,45 @@ a {
 
 #icon1:hover, #icon2:hover, #icon3:hover{
     box-shadow: 0px 0px 10px;
-    color:whitesmoke
+    color:whitesmoke;
+    height:100px;
+    width:100px;
+    transition: ease 50ms;
+}
+
+#icon4 {
+    float:right;
+    height:50px;
+    width:150px;
+    margin-right:30px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+#icon4:hover{
+    box-shadow: 0px 0px 10px;
+    color:whitesmoke;
+    height:60px;
+    width:160px;
+    transition: ease 50ms;
+
+}
+
+#icon5{
+    float:right;
+    height:100px;
+    width:150px;
+    margin-right: 30px;
+    border-radius: 12px;
+}
+
+#icon5:hover{
+    box-shadow: 0px 0px 10px;
+    color:whitesmoke;
+    height:110px;
+    width:160px;
+    transition: ease 50ms;
+
 }
 
 
@@ -123,18 +167,25 @@ a {
 
 
 .footer {
-    padding: 30px;
-    clear: both;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 50px;
+    border-top: 3px solid #c78ab5;
+    border-bottom:3px solid #c78ab5 ;
+    background-color: pink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    text-align: center;  
 }
 
 .footer h2 {
     font-size: 20px;
 }
 
-@media screen {
-
-}
-
-
+@media screen and (max-width: 968px) {
+    header {
+        border-bottom: 36px;
+        border-style: solid; 
+        border-color: #ce6bb0;
+    }
+  }
